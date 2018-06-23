@@ -163,9 +163,10 @@
     ledge.scale.setTo(0.5, 0.5);
     platforms.addAll('body.velocity.y', -20)
     platforms.allowGravity = false;
+
+
     player = CreatePlayer('per', 96);
     player.textArea = game.add.text(16, 16, '0', { fontSize: '32px', fill: '#f46e42' });
-
     player.leftKey = game.input.keyboard.addKey(Phaser.Keyboard.LEFT);
     player.rightKey = game.input.keyboard.addKey(Phaser.Keyboard.RIGHT);
     player.upKey = game.input.keyboard.addKey(Phaser.Keyboard.UP);
@@ -188,7 +189,8 @@
         ledge.scale.setTo(((Math.random() * 0.5) + 0.2),0.5);
         platforms.allowGravity = false;
     }
-    platforms.setAll('body.velocity.y', (seconds + 150) * -1);
+    platforms.setAll('body.gravity.y', );
+    // platforms.setAll('body.velocity.y', (seconds + 150) * -1);
     platforms.setAll('body.velocity.x', 0);
     game.physics.arcade.collide(platforms, roofGroup, killPlatform, null, this);
     player.move();
