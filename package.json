@@ -2,7 +2,6 @@
     "name": "PhaserES6Webpack",
     "version": "1.2.1",
     "description": "",
-    "author": "leandro cabrera <leandcabrera@gmail.com>",
     "main": "index.js",
     "scripts": {
         "dev": "webpack",
