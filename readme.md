@@ -19,9 +19,10 @@ This game is made using (https://github.com/lean/phaser-es6-webpack)
 
 # Setup
 
+
 ## 1. Requirements
 
-- Install node.js and npm:
+- Install node.js and npm (It has only been tested with npm version 6.4.1 and node version 8.0.0)
 
 ## 2. Clone this repo:
 
